@@ -20,6 +20,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{ asset('/') }}backend/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   
+
   
  <link rel="stylesheet" href="{{ asset('/') }}css/app.css">
 
@@ -37,7 +38,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <body class="hold-transition sidebar-mini layout-fixed">
   
 <div class="wrapper">
-<section class="container-fluid bg-white">
+<section class="container-fluid ">
 
   <!-- Header -->
   @include('backend.includes.header')

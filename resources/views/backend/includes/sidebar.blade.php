@@ -34,7 +34,7 @@
             
             <li class="nav-item has-treeview">
             <a href="#" class="nav-link {{ Request::is('admin/student')? 'active' : '' }} >
-            <i class="fas fa-edit fa-lg"></i>
+            
               <p>
                Student
                 <i class="right fas fa-angle-left"></i>
