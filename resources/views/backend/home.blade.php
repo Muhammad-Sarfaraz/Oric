@@ -25,7 +25,7 @@
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Posts</span>
+                        <span class="stats-small__label text-uppercase">Students</span>
                         <h6 class="stats-small__value count my-3">2,390</h6>
                       </div>
                       <div class="stats-small__data">
@@ -41,7 +41,7 @@
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Pages</span>
+                        <span class="stats-small__label text-uppercase">Teacher</span>
                         <h6 class="stats-small__value count my-3">182</h6>
                       </div>
                       <div class="stats-small__data">
@@ -57,7 +57,7 @@
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Comments</span>
+                        <span class="stats-small__label text-uppercase">Monthly Visitor</span>
                         <h6 class="stats-small__value count my-3">8,147</h6>
                       </div>
                       <div class="stats-small__data">

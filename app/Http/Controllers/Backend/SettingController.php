@@ -38,9 +38,9 @@ class SettingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function settingCreate()
     {
-        //
+        return view('backend.settings.setting.index');
     }
 
     /**
