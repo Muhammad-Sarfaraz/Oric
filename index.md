@@ -4,6 +4,7 @@
 
 <center>
     <h1>Oric</h1>
+    <p>A school management Software<p/>
     <p align="center">
 
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
