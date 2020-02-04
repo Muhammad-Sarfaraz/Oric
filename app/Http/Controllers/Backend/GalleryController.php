@@ -31,11 +31,7 @@ class GalleryController extends Controller
         //print_r($request->except('_token'));
 
        //return view('backend.site.gallery.gallery');
-       $this->validate($request, [
-        'title' => 'required|min:1|max:255',
-        'image' => 'required|mimes:jpeg,jpg,png|',
-
-    ]);
+       
        
      $storagepath = $request->file('image')->store('public/gallery');
         $fileName = basename($storagepath);

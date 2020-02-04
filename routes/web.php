@@ -92,7 +92,7 @@ Route::group([
         'prefix' => 'admin',
         'middleware' => 'auth',
 ],function () {
-    Route::get('/home','HomeController@index');
+    Route::get('/home','HomeController@index')->name('dashboard');
     Route::get('/site_boost','HomeController@index');
     Route::get('/home/site_boost','HomeController@boost');
 
@@ -137,9 +137,9 @@ Route::group([
 
 
     //Slider(/slider)
-  Route::get('/admin/slider/', 'SliderController@index')->name('slider.index');
-  Route::post('/admin/slider/store','BackSliderController@store')->name('slider.store');
-  Route::get('/admin/slider/delete/{id}','BackSliderController@destroy')->name('slider.destroy');;
+  Route::get('/slider', 'SliderController@index')->name('slider.index');
+  Route::post('/slider/store','SliderController@store')->name('slider.store');
+  Route::get('/slider/delete/{id}','SliderController@destroy')->name('slider.destroy');;
 
   //Students(/student)
   Route::get('/student','StudentController@index')->name('student.index');

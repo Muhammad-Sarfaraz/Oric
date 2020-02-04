@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Slider;
 
 class SliderController extends Controller
 {
@@ -14,7 +15,8 @@ class SliderController extends Controller
      */
     public function index()
     {
-        return view('backend.site.slider.add');
+        $images=Slider::orderBy('id', 'ASC')->get();
+        return view('backend.site.slider.add',compact('images'));
     }
 
     /**
@@ -33,10 +35,44 @@ class SliderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+
+
+
+
+    
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store (Request $request)
     {
-        //
+        
+        
+        //print_r($request->all());
+        $data = new Slider;
+
+        $data->title=$request->title;
+
+        $data->order=$request->order;
+        $data->image=$request->image->store('public/gallery/slider');
+       
+        $data->save();
+
+        return back()->with('status','Successfully Uploaded!');
+
+
+        
     }
+
+
+
+
+
+
+
+
 
     /**
      * Display the specified resource.
@@ -80,6 +116,8 @@ class SliderController extends Controller
      */
     public function destroy($id)
     {
-        //
+       Slider::find($id)->delete();
+       return back()->with('status','Successfully Deleted');
+
     }
 }

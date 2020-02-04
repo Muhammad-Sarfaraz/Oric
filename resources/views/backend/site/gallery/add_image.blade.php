@@ -17,21 +17,20 @@
 
 @section('content')
 
-
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="#">Dashboard</a>
+  </li>
+  <li class="breadcrumb-item active">Gallery</li>
+</ol>
 
 <section class="content">
 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Add Image</h3>
-              <div class="col-md-12">
+<div class="col-md-12">
                     <div class="box-tools pull-right">
-                        <a class="btn btn-info btn-sm" href="{{url('admin/notice/add')}}"><i class="fas fa-plus"></i> Add New</a>
+                        <a class="btn btn-info btn-sm" href="{{url('admin/gallery/view')}}"><i class="fab fa-envira"></i> View Image</a>
                     </div>
-                </div><!-- /.col -->
-            </div>
+                
 
         <div class="col-md-6">
         <div class="card bg-light text-dark">

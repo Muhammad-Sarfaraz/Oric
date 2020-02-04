@@ -58,6 +58,12 @@
 
 @section('content')
 
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="{{route('/')}}">Dashboard</a>
+  </li>
+  <li class="breadcrumb-item active">Gallery</li>
+</ol
 
 <section class="content">
 
@@ -65,7 +71,7 @@
         <div class="col-md-12">
           <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Gallery</h3>
+              
               <div class="col-md-12">
                     <div class="box-tools pull-right">
                         <a class="btn btn-info btn-sm" href="{{url('admin/gallery/add_image')}}"><i class="fas fa-plus"></i> Add New</a>
@@ -91,14 +97,15 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    @foreach($images as $image)
+                    @forelse($images as $image)
                     <div class="col-xs-6 col-md-3 thumbnail">
                         <img class="img-responsive" src="{{ Storage::url('gallery/'.$image->image) }}" alt="image">
                         <div class="middle">
                             <a href="{{url('admin/gallery/delete/'.$image->id)}}" data-id="9" class="remove-image" title="Delete Image"><i class="fas fa-trash fa-2x"></i> </a>
                         </div>
                     </div>
-                    @endforeach
+                    @empty
+                    @endforelse
                 </div>
 
             </div>
