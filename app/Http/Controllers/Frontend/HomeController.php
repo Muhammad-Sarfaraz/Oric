@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Website;
 use App\Gallery;
 
 class HomeController extends Controller
@@ -16,9 +16,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        
         //echo "Hello";
         return view('frontend.index');
     }
+
     
     /* How To Apply Controller
      * @Frontend

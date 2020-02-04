@@ -171,8 +171,9 @@ Route::group([
    Route::get('/setting/backup/','SettingController@database_View')->name('backup');
    Route::post('/setting/backup/post','SettingController@database_backup')->name('backup.post');
    
-   //site setting
-   Route::get('site/setting/','SettingController@settingCreate')->name('site.setting.create');
+   //site Infromation
+   Route::get('site/setting/','WebsiteController@index')->name('site.setting.create');
+   Route::post('site/setting/store','WebsiteController@store')->name('site.setting.store');
   
   
   //Academic(/academic)

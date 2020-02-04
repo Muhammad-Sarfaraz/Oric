@@ -38,7 +38,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <body class="hold-transition sidebar-mini layout-fixed">
   
 <div class="wrapper">
-<section class="container-fluid ">
+<section class="container-fluid bg-white ">
 
   <!-- Header -->
   @include('backend.includes.header')

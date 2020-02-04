@@ -20,7 +20,7 @@
 use App\Http\Controllers\Backend\SliderController;
 
 Route::group(['namespace' => 'Frontend'], function () {
-    Route::get('/','HomeController@index');
+    Route::get('/','HomeController@index')->name('/');
     Route::get('/gallery','HomeController@gallery');
     Route::get('/how_to_apply','HomeController@HowToApply')->name('how.to.apply');
     Route::get('/tution_and_fees','HomeController@TutionAndFees')->name('tution.and.fees');
